@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T.E.I.T.R. MANAGEMENT LLC</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #FFD700;
+            color: #222;
+            line-height: 1.8;
+            font-size: 18px;
+        }
+        header {
+            position: fixed;
+            width: 100%;
+            background-color: rgba(0,0,0,0.85);
+            color: #FFD700;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            z-index: 1000;
+        }
+        header h1 {
+            font-size: 22px;
+            margin: 0;
+        }
+        nav a {
+            color: #FFD700;
+            margin-left: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            color: white;
+        }
+        section {
+            padding: 120px 10% 100px;
+        }
+        .hero {
+            background-image: url('https://images.unsplash.com/photo-1520545221203-f6ca6a8e3252?q=80&w=1331&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+        .hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.6);
+        }
+        .hero-content {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 2;
+        }
+        .hero h2 {
+            font-size: 52px;
+            margin-bottom: 20px;
+            color: #FFD700;
+        }
+        .hero p {
+            font-size: 22px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .about {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 50px;
+        }
+        .about img {
+            width: 45%;
+            border-radius: 10px;
+        }
+        .services, .benefits, .process {
+            text-align: center;
+        }
+        .service-item, .benefit-item, .process-step {
+            margin-bottom: 40px;
+        }
+        h3.section-title {
+            font-size: 36px;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            color: #000;
+        }
+        .contacts {
+            background-color: #000;
+            color: #FFD700;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .contact-box {
+            border: 3px solid #FFD700;
+            padding: 40px;
+            max-width: 600px;
+        }
+        .contact-box p {
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>T.E.I.T.R. MANAGEMENT LLC</h1>
+        <nav>
+        </nav>
+    </header>
+
+    <!-- Главный экран -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>T.E.I.T.R. MANAGEMENT LLC</h2>
+            <p>Empowering organizations with tailored business, finance, and IT consulting solutions. We bring clarity, efficiency, and innovation to every aspect of management — helping your enterprise scale smarter and faster.</p>
+        </div>
+    </section>
+
+    <!-- Про нас -->
+    <section id="about">
+        <h3 class="section-title">Who We Are</h3>
+        <div class="about">
+            <div class="text">
+                <p>T.E.I.T.R. MANAGEMENT LLC is a consulting firm dedicated to transforming ideas into structured, data-driven results. We specialize in business optimization, IT infrastructure strategy, and financial performance improvement. Our approach combines analytical precision with a deep understanding of market realities, allowing our clients to navigate change with confidence. From startups to established enterprises, we help build frameworks for long-term growth and sustainability.</p>
+                <p>Our consultants bring decades of experience across multiple industries, ensuring every solution we design is both practical and innovative. At T.E.I.T.R., we don’t just advise — we partner in your progress.</p>
+            </div>
+            <img src="https://images.unsplash.com/photo-1603201667141-5a2d4c673378?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTI1fHxvZmZpY2UlMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D" alt="Our Team">
+        </div>
+    </section>
+
+    <!-- Сервисы -->
+    <section id="services" class="services">
+        <h3 class="section-title">Our Expertise</h3>
+        <div class="service-item">
+            <h4>Business & Management Consulting</h4>
+            <p>We analyze operations, restructure processes, and create data-based strategies that strengthen leadership, enhance productivity, and unlock new opportunities for sustainable business growth.</p>
+        </div>
+        <div class="service-item">
+            <h4>Financial Advisory & Planning</h4>
+            <p>Our financial consultants guide your company through budgeting, forecasting, and capital optimization, ensuring every decision supports both immediate goals and long-term stability.</p>
+        </div>
+        <div class="service-item">
+            <h4>IT Strategy & Systems Integration</h4>
+            <p>We develop and implement IT strategies that bridge technology with business objectives — from cloud migration to cybersecurity frameworks — helping you stay agile in a digital-first world.</p>
+        </div>
+    </section>
+
+    <!-- Преимущества -->
+    <section id="benefits" class="benefits">
+        <h3 class="section-title">Why Choose T.E.I.T.R.</h3>
+        <div class="benefit-item">
+            <h4>Tailored Strategies</h4>
+            <p>Every business is unique. We craft customized consulting solutions designed around your company’s goals, industry, and market position.</p>
+        </div>
+        <div class="benefit-item">
+            <h4>Proven Expertise</h4>
+            <p>Our multidisciplinary team combines business insight with IT proficiency, delivering measurable impact through real-world experience.</p>
+        </div>
+        <div class="benefit-item">
+            <h4>Transparent Partnership</h4>
+            <p>We believe in open communication, clear deliverables, and accountability — building long-term relationships based on trust and performance.</p>
+        </div>
+    </section>
+
+    <!-- Процесс -->
+    <section id="process" class="process">
+        <h3 class="section-title">How We Work</h3>
+        <div class="process-step">
+            <h4>1. Discovery & Analysis</h4>
+            <p>We start by understanding your challenges, mapping opportunities, and gathering insights that define your unique business landscape.</p>
+        </div>
+        <div class="process-step">
+            <h4>2. Strategy Development</h4>
+            <p>Our consultants design actionable strategies — blending management principles, financial analytics, and IT innovation to meet your objectives.</p>
+        </div>
+        <div class="process-step">
+            <h4>3. Implementation & Support</h4>
+            <p>We execute the plan with precision, monitor results, and provide ongoing guidance to ensure sustainable success and measurable outcomes.</p>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contacts" class="contacts">
+        <div class="contact-box">
+            <h3>Contact Us</h3>
+            <p>Let’s take your business to the next level. Reach out to us today and discover how our consulting expertise can redefine your company’s growth strategy.</p>
+            <p>We’re ready to collaborate, innovate, and make your vision a measurable reality.</p>
+            <p><strong>Address:</strong> 117 Andreas St, Winter Haven, FL 33881, United States</p>
+            <p><strong>Email:</strong> <a href="mailto:support@teitrmanagement.services" style="color:#FFD700;">support@teitrmanagement.services</a></p>
+        </div>
+    </section>
+
+</body>
+</html>
